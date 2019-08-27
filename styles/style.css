@@ -278,4 +278,20 @@ article {
     position:fixed;
     top:0px;
     left:0px;
+    height: 101px;
+    z-index: 12;
+    width: 100%;
+}
+ul.none-list-style{
+    padding:0;
+    margin:0;
+}ul.none-list-style li{
+     list-style: none;
+     padding:0;
+     margin:0;
+
+ }
+#content-block .header-bar.page-content {
+    background: #582000;
+    height: 100px;
 }

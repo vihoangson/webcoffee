@@ -93,7 +93,7 @@ $(".click-more-img").click(function (a) {
         $(".box-4 img").attr('src', data_img[1][3].img);
     }
 });
-$(window).bind('scroll', function () {
+function checkscroll(){
     if ($(window).scrollTop() > 70) {
         $('.menu').addClass('fixed');
         $('.menu').removeClass('hidden');
@@ -101,4 +101,10 @@ $(window).bind('scroll', function () {
         $('.menu').removeClass('fixed');
         $('.menu').addClass('hidden');
     }
+}
+$(document).ready(function(){
+    checkscroll();
+})
+$(window).bind('scroll', function () {
+    checkscroll();
 });
