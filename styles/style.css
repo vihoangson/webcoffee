@@ -257,3 +257,8 @@ article {
     top: 31px;
     right: 10%;
 }
+.fixed{
+    position:fixed;
+    top:0px;
+    left:0px;
+}
