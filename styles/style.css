@@ -2,6 +2,19 @@ body{
     background:url("../imgs/background.png") repeat center center;
     font-family: 'Roboto';
 }
+.out{
+    position:relative;
+    width:100%;
+    background: red;
+    height: 400px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
 
 .header-bar ul li {list-style: none;padding: 0;margin: 0;FLOAT: LEFT;WIDTH: 141PX;FONT-SIZE: 14PX;TEXT-ALIGN: CENTER;}
 #real-story .block-left.col-lg-4 {padding-left: 0px;}
@@ -83,12 +96,14 @@ li.mid-block {
     display: none;
     position: absolute;
     top: 50%;
-    left: 42%;
+    left: 50%;
     z-index: 10;
     padding: 23px;
     font-weight: bold;
     background: white;
     color: #582000  ;
+    transform: translate(-50%, -50%);
+
 }
 
 #model-contact{
@@ -107,11 +122,13 @@ li.mid-block {
 div#model-contact {
     position: fixed;
     background: white;
-    top: 42px;
-    left: 260px;
+    top: 50%;
+    left: 50%;
     padding-bottom: 20px;
     z-index: 1124;
     width: 72%;
+    transform: translate(-50%, -50%);
+
 }
 .form-group.form-order {
     width: 60%;

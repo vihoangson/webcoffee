@@ -1,0 +1,27 @@
+{
+  "name": "webcoffee",
+  "homepage": "https://github.com/vihoangson/webcoffee",
+  "authors": [
+    "[Lampart] Vi Hoang Son <hoang_son@lampart-vn.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^5.10.2"
+  },
+  "devDependencies": {
+    "font-awesome": "^5.10.2",
+    "jquery": "^3.4.1",
+    "bootstrap": "^4.3.1",
+    "vue": "^2.6.10",
+    "animate.css": "^3.7.2"
+  }
+}
