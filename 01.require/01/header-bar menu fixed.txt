@@ -1,0 +1,14 @@
+<div class="header-bar menu fixed" id="home-scroll">
+
+phân này chinh dô cao cua thanh header bar, mày chinh giúp tao bên muc New thanh header bar có 
+cái hình nên giông y chang bên Home nha
+
+
+    position: fixed;
+    top: -4px;
+    left: 0px;
+    height: 91px;
+    z-index: 12;
+    width: 100%;
+
+
