@@ -39,14 +39,15 @@ body{
     /* background: blue; */
 }
 
+
 .header-bar img {
-    width: 110px;
+    width: 148px;
     position: absolute;
-    left: 46%;
-    top: 29px;
+    left: 44%;
+    top: 43px;
 }
 li.mid-block {
-    margin-left: 155px !important;
+    margin-left: 285px !important;
 }
 .header-bar a {
     color: white;
