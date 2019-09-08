@@ -1,8 +1,11 @@
 <?php
 session_start();
-if(!is_writable_r('./data/order')){
-    echo 1;
-    chmod('./data/order',777);
+if(true){
+    if(!is_writable_r('./data/order')){
+        echo 1;
+        chmod('./data/order',777);
+    }
+
 }
 function is_writable_r($dir) {
     if (is_dir($dir)) {
@@ -175,13 +178,8 @@ function is_writable_r($dir) {
         <article data-id="" class="">
             <img src="imgs/news.png">
             <div class="description">
-                <a target="_blank" href="page1.html">Vũ khí có thể giúp Trump ép công ty Mỹ rời Trung Quốc1</a>
-                <div class="content-blog">Vài giờ sau khi Trung Quốc hôm qua thông báo sẽ áp thuế 5-10% với 75 tỷ USD
-                    hàng hóa Mỹ từ 1/9 và 15/12,
-                    Tổng thống Donald Trump yêu cầu các công ty Mỹ "tìm phương án thay thế Trung Quốc, trong đó có đưa
-                    công
-                    ty về quê hương và sản xuất tại Mỹ".
-                </div>
+                <a target="_blank" href="page1.html">{{title}}</a>
+                <div class="content-blog">{{content}}</div>
             </div>
         </article>
     </div>
@@ -201,7 +199,9 @@ function is_writable_r($dir) {
     </article>
 
 </div>
+
 <footer class="" style="position:relative  ">
+
     <div class="content-footer">
         <img src="imgs/logo.png">
         <div>U-Kafe - Real Coffee</div>
@@ -210,21 +210,15 @@ function is_writable_r($dir) {
     </div>
 
     <div class="fb-block">
-
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe10%2F&tabs&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                allowTransparency="true" allow="encrypted-media"></iframe>
-
-        <!--        <iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe&amp;tabs&amp;width=340&amp;height=154&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;colorscheme=dark&amp;show_facepile=true&amp;appId=1079595618783088" frameborder="0" scrolling="no"></iframe>-->
-
-
+<!--        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe10%2F&tabs&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"-->
+<!--                width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
+<!--                allowTransparency="true" allow="encrypted-media"></iframe>-->
+                <iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe&amp;tabs&amp;width=340&amp;height=154&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;colorscheme=dark&amp;show_facepile=true&amp;appId=1079595618783088" frameborder="0" scrolling="no"></iframe>
     </div>
 
 </footer>
 
-
-<div class="cover-fix">
-</div>
+<div class="cover-fix"></div>
 
 <div id="model-contact">
     <form action="send.php" method="POST" role="form">
@@ -329,16 +323,7 @@ function is_writable_r($dir) {
     </form>
 </div>
 
-<div id="model-contact-news">
-
-</div>
-
-<div class="container">
-    <div class="starter-template">
-
-    </div>
-
-</div><!-- /.container -->
+<div id="model-contact-news"></div>
 
 
 <!-- Bootstrap core JavaScript
@@ -350,20 +335,24 @@ function is_writable_r($dir) {
 <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&amp;version=v2.5"></script>
 <script src="scripts/app.js"></script>
+<script src="scripts/news.js"></script>
+<script src="scripts/order.js"></script>
 <script>
     <?php
-    if($_SESSION['status_order'] == 1){
-        ?>
-        alert('Thank you for order');
-        <?php
-        $_SESSION['status_order'] = null;
-    }elseif ($_SESSION['status_order'] == 2){
-        ?>
-        alert('Cant order');
-        <?php
-        $_SESSION['status_order'] = null;
+    if(true){
+        if($_SESSION['status_order'] == 1){
+?>
+alert('Thank you for order');
+<?php
+$_SESSION['status_order'] = null;
+}elseif ($_SESSION['status_order'] == 2){
+?>
+alert('Cant order');
+<?php
+$_SESSION['status_order'] = null;
 
-        }
+}
+    }
     ?>
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
