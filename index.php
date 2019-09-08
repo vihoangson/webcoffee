@@ -176,7 +176,7 @@ function is_writable_r($dir) {
     <h2>NEWS</h2>
     <div class="row content-news">
         <article data-id="" class="">
-            <img src="imgs/news.png">
+            <div class="cover-img"><img src="imgs/news.png"></div>
             <div class="description">
                 <a target="_blank" href="page1.html">{{title}}</a>
                 <div class="content-blog">{{content}}</div>

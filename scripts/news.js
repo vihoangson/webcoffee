@@ -75,6 +75,11 @@ $(".click-more-img").click(function (a) {
 });
 
 function getDataNews(){
+    $.get('http://u-kafe.com/admin-post/index.php/wp-json/wp/v2/news',function(res){
+        var res_news = res;
+    })
+    return res_news;
+    return ;
     return [
         {
             title:'123',
@@ -93,24 +98,37 @@ function getDataNews(){
 }
 
 function setNews(){
-    let data = getDataNews();
-    let k = $(".content-news article").first();
-    k.hide();
-    $.each(data,function(key,v){
-        let m = k.clone();
-        m.find('img').attr('src',v.img);
-        m.find('a').attr('href',v.link);
-        m.find('a').text(v.title);
-        m.find('.content-blog').text(v.content);
-        m.attr('data-id',key+1);
-        if(key != 0){
-            m.hide();
-        }else{
-            m.show();
-        }
-        $(".content-news").append(m);
+    callback = function(res){
+        console.log(res);
+        let k = $(".content-news article").first();
+        k.hide();
+        $.each(res,function(key,v){
+            let m = k.clone();
+            if(v._embedded["wp:featuredmedia"] != undefined){
+                m.find('img').attr('src',v._embedded["wp:featuredmedia"][0].source_url);
+            }else{
+                m.find('img').attr('src','https://via.placeholder.com/200x200');
+            }
 
-    });
+            let link = "news-detail.php?id="+v.id ;
+            m.find('a').attr('href',link);
+            m.find('a').text(v.title.rendered);
+            m.find('.content-blog').html(v.excerpt.rendered);
+            m.attr('data-id',key+1);
+            if(key != 0){
+                m.hide();
+            }else{
+                m.show();
+            }
+            $(".content-news").append(m);
+
+        });
+    };
+
+    $.get('http://u-kafe.com/admin-post/index.php/wp-json/wp/v2/news?_embed' , callback);
+
+    return;
+
 
 }
 $(document).ready(function(){
