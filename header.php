@@ -68,16 +68,16 @@ function is_writable_r($dir) {
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id="page-<?= PAGE ?>">
 <div class="header-bar menu <?= (PAGE == 'HOME'?'':'sticked') ?>" id="home-scroll">
     <div>
         <ul>
-            <li><a href="#home">HOME </a></li>
-            <li><a href="#real-story">OUT STORY </a></li>
-            <li><a href="#coffee">PRODUCT </a></li>
-            <li class="mid-block"><a href="#trust">TRUST </a></li>
-            <li><a href="#contact">CONTACT </a></li>
-            <li><a href="#news">NEWS</a></li>
+            <li><a href="<?= PAGE=='HOME'?'':'/' ?>#home">HOME </a></li>
+            <li><a href="<?= PAGE=='HOME'?'':'/' ?>#real-story">OUT STORY </a></li>
+            <li><a href="<?= PAGE=='HOME'?'':'/' ?>#coffee">PRODUCT </a></li>
+            <li class="mid-block"><a href="<?= PAGE=='HOME'?'':'/' ?>#trust">TRUST </a></li>
+            <li><a href="<?= PAGE=='HOME'?'':'/' ?>#contact">CONTACT </a></li>
+            <li><a href="<?= PAGE=='HOME'?'':'/' ?>#news">NEWS</a></li>
         </ul>
         <a href="/"><img src="imgs/logo.png"></a>
     </div>

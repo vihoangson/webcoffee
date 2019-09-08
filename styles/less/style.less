@@ -1,10 +1,41 @@
 @colormain: #582000;
 @colormaininv: #fff;
 
+@wide-screen-down: ~'(max-width: 1199px)';
+@desktop-down: ~'(max-width: 991px)';
+@tablet-down: ~'(max-width: 767px)';
+@phone-down: ~'(max-width: 480px)';
+@small-phone-down: ~'(max-width: 320px)';
+
 body {
   background: url("../../imgs/background.png") repeat center center;
   font-family: 'Roboto';
 }
+
+
+.header-bar{
+
+
+  ul li{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    FLOAT: LEFT;
+    WIDTH: 141PX;
+    FONT-SIZE: 14PX;
+    TEXT-ALIGN: CENTER;
+
+    @media (max-width: 2000px) { width: 127px; }
+    @media @wide-screen-down { width: 100px; }
+    @media @desktop-down {width: 100px; }
+    @media @tablet-down { width: 92px; }
+    @media @phone-down {width: 150px; }
+    @media @small-phone-down { width: 120px; }
+  }
+}
+
+
 
 .out {
   position: relative;
@@ -23,13 +54,7 @@ body {
 
 .header-bar {
   ul li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    FLOAT: LEFT;
-    WIDTH: 141PX;
-    FONT-SIZE: 14PX;
-    TEXT-ALIGN: CENTER;
+
   }
 
   ul {
@@ -46,19 +71,27 @@ body {
   }
 
   > div {
-    width: 1050px;
     height: 65px;
     padding-top: 40px;
     margin: 0 auto;
     text-align: center;
-    /* background: blue; */
+
+    @media (max-width: 2000px) { width: 1050px; }
+    @media @wide-screen-down { width: 900px; }
+    @media @desktop-down {width: 900px; }
+    @media @tablet-down { width: 800px; }
+    @media @phone-down {width: 1050px; }
+    @media @small-phone-down { width: 1050px; }
   }
 
   img {
     width: 148px;
     position: absolute;
-    left: 44%;
+    left: 50%;
     top: 43px;
+    transform: translate(-50%, -50%);
+
+
   }
 
   a {
@@ -73,7 +106,12 @@ body {
 }
 
 li.mid-block {
-  margin-left: 285px !important;
+  @media (max-width: 2000px) { margin-left: 285px !important; }
+  @media @wide-screen-down { margin-left: 285px !important; }
+  @media @desktop-down {margin-left: 285px !important; }
+  @media @tablet-down { margin-left: 224px !important; }
+  @media @phone-down {margin-left: 285px !important; }
+  @media @small-phone-down { margin-left: 285px !important; }
 }
 
 
@@ -400,4 +438,12 @@ ul.none-list-style li {
 
 #real-story p {
   line-height: 35px;
+}
+
+
+body#page-HOME {
+  padding: 0;
+}
+body#page-DETAIL {
+  padding-top: 10px;
 }
