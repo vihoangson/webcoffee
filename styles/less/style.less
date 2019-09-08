@@ -1,4 +1,5 @@
 @colormain: #582000;
+@colormaininv: #fff;
 
 body {
   background: url("../../imgs/background.png") repeat center center;
@@ -192,10 +193,6 @@ div#model-contact {
 }
 
 
-#news img, #commitment img, #contact img {
-  width: 100%;
-}
-
 #commitment img {
   width: 79%;
 }
@@ -208,42 +205,57 @@ div#model-contact {
   padding: 1px;
 }
 
-#news .row {
-  position: relative;
-}
-
-div#news article .description {
-  position: absolute;
-  background: #ffffffd9;
-  margin-top: -100px;
+#commitment img, #contact img {
   width: 100%;
-  z-index: 131;
-  bottom: 0px;
-  padding: 15px;
-  color: @colormain;
 }
 
-div#news article .description a {
-  display: block;
-  color: @colormain;
-  font-weight: bold;
-  font-size: 25px;
-}
+#news {
+  img {
+    width: 100%;
+  }
 
-#news li {
-  cursor: pointer;
-  list-style: none;
-  float: left;
-  padding: 2px 8px;
-  margin: 3px;
-  border: 1px solid @colormain;
-}
+  .row {
+    position: relative;
+  }
 
-#news ul {
-  margin: 0px;
-  margin-top: 10px;
-  padding: 0px;
-  float: right;
+  article .description {
+    position: absolute;
+    background: #ffffffd9;
+    margin-top: -100px;
+    width: 100%;
+    z-index: 131;
+    bottom: 0px;
+    padding: 15px;
+    color: @colormain;
+  }
+
+  article .description a {
+    display: block;
+    color: @colormain;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  li {
+    cursor: pointer;
+    list-style: none;
+    float: left;
+    padding: 2px 8px;
+    margin: 3px;
+    border: 1px solid @colormain;
+  }
+
+  ul {
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    float: right;
+  }
+
+  .cover-img {
+    height: 600px;
+    overflow: hidden;
+  }
 }
 
 footer {
@@ -276,7 +288,25 @@ footer .content-footer img {
 }
 
 .container.list-news a {
-  color: @colormain;
+  color: @colormaininv;
+}
+
+.list-news {
+  article {
+
+    h3 {
+      padding: 0px;
+      margin: 0px;
+      line-height: normal;
+      font-size: 15px;
+    }
+  }
+}
+
+.list-news {
+  button {
+    color: #e4e4e4;
+  }
 }
 
 #model-contact legend {
