@@ -91,7 +91,6 @@ function setNews(){
 
             if(true){
                 res = sessionStorage.getItem('data-news');
-                console.log(res);
                 res = JSON.parse(res);
                 let k = $(".content-news article").first();
                 k.hide();

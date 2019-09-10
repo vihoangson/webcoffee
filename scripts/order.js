@@ -10,7 +10,12 @@ $(".list-button").click(function () {
 
 function openModal(id) {
     $("#type-product select > option").prop("selected", false);
-    $("#type-product select > option:nth-child(" + (id) + ")").prop("selected", "selected");
+    $('#type-product select > option').each(function(){
+        if($(this).data("id") == id){
+            $(this).prop("selected", "selected");
+        }
+    })
+    //$("#type-product select > option:nth-child(" + (id) + ")").prop("selected", "selected");
     countPrice();
     $('#model-contact').show();
     $('.cover-fix').show();
@@ -31,10 +36,6 @@ $(".e-product").each(function () {
 countPrice();
 
 function countPrice() {
-
-
-
-
 
     price = $("#type-product select").val();
 
