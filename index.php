@@ -24,19 +24,31 @@ include('header.php'); ?>
         </div>
     </div>
 </div>
+<?php
 
+$json_str = file_get_contents('http://u-kafe.com/admin-post/index.php/wp-json/wp/v2/product?_embed');
+$array_product = json_decode($json_str,true);
+
+?>
 <div class="coffee block-box container" id="coffee">
     <h2>COFFEE</h2>
     <div class="box row">
-        <div class="order">
-            <img src='imgs\san pham 1.png'>
-            <a href="#" data-id="1">MUA HÀNG</a>
-        </div>
-        <div class="order">
+        <?php
+        foreach ($array_product as $key=>$value){
+            ?>
+            <div class="order" >
+                <img src='<?= $value['_embedded']["wp:featuredmedia"]["0"]['source_url'] ?>'>
+                <a class="e-product" href="#" data-id="<?= $value['id'] ?>"  data-price="<?= $value['price'] ?>" data-name="<?= $value['title']['rendered'] ?>">MUA HÀNG</a>
+            </div>
+
+            <?php
+        }
+        ?>
+        <div class="order hidden">
             <img src='imgs\san pham 2.png'>
             <a href="#" data-id="2">MUA HÀNG</a>
         </div>
-        <div class="order">
+        <div class="order hidden">
             <img src='imgs\san pham 3.png'>
             <a href="#" data-id="3">MUA HÀNG</a>
         </div>

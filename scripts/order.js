@@ -4,39 +4,39 @@ $('.order a').click(function (e) {
     openModal(id);
 
 });
-$(".list-button").click(function(){
+$(".list-button").click(function () {
     $(".list-news").show();
 });
+
 function openModal(id) {
-    $("#type-product select > option").prop("selected",false);
-    $("#type-product select > option:nth-child("+(id)+")").prop("selected","selected");
+    $("#type-product select > option").prop("selected", false);
+    $("#type-product select > option:nth-child(" + (id) + ")").prop("selected", "selected");
     countPrice();
     $('#model-contact').show();
     $('.cover-fix').show();
 }
-$("#type-product select").change(function(){
-    countPrice();
-})
-$("#amount").change(function(){
-    countPrice();
-})
-countPrice
-function countPrice(){
-    console.log($("#type-product select > option:selected").index()+1);
-id = $("#type-product select > option:selected").index()+1;
-switch (id) {
-    case 1:
-        price = 100000;
-        break;
-    case 2:
-        price = 150000;
-        break;
-    case 3:
-        price =
-            200000;
-        break;
-}
 
+$("#type-product select").change(function () {
+    countPrice();
+})
+$("#amount").change(function () {
+    countPrice();
+})
+
+$("#type-product select option").remove();
+$(".e-product").each(function () {
+    $("#type-product select").append("<option value='" + $(this).data('price') + "' data-id='" + $(this).data('id') + "'>" + $(this).data('name') + "</option>");
+})
+
+countPrice();
+
+function countPrice() {
+
+
+
+
+
+    price = $("#type-product select").val();
 
     let amount = $("#amount").val();
     total = amount * price
@@ -46,10 +46,12 @@ switch (id) {
     $("#price").text(formatCurrency(price));
     $("#total").text(formatCurrency(total))
 }
-function formatCurrency(curr){
-    curr  = formatMoney(curr);
+
+function formatCurrency(curr) {
+    curr = formatMoney(curr);
     return curr + " đ"
 }
+
 function formatMoney(amount, decimalCount = 0, decimal = ".", thousands = ",") {
     try {
         decimalCount = Math.abs(decimalCount);
@@ -65,7 +67,7 @@ function formatMoney(amount, decimalCount = 0, decimal = ".", thousands = ",") {
         console.log(e)
     }
 };
-$(".btn-close").click(function(){
+$(".btn-close").click(function () {
     $('.cover-fix').trigger('click');
 });
 $('.cover-fix').click(function () {

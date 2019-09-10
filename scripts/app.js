@@ -1,3 +1,9 @@
+function getDataProduct(){
+    $.get('http://u-kafe.com/admin-post/index.php/wp-json/wp/v2/product?_embed',function(res){
+        console.log(res[0].title.rendered);
+    })
+}
+
 function checkscroll(){
 
     if($(".sticked").length > 0){
@@ -15,7 +21,9 @@ function checkscroll(){
     }
 
 }
+
 $(document).ready(function(){
+    getDataProduct();
     checkscroll();
 })
 

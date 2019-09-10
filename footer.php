@@ -1,4 +1,3 @@
-
 <footer class="" style="position:relative  ">
 
     <div class="content-footer">
@@ -12,7 +11,9 @@
         <!--        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe10%2F&tabs&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"-->
         <!--                width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
         <!--                allowTransparency="true" allow="encrypted-media"></iframe>-->
-        <iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe&amp;tabs&amp;width=340&amp;height=154&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;colorscheme=dark&amp;show_facepile=true&amp;appId=1079595618783088" frameborder="0" scrolling="no"></iframe>
+        <iframe style="border: none; overflow: hidden;"
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe&amp;tabs&amp;width=340&amp;height=154&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;colorscheme=dark&amp;show_facepile=true&amp;appId=1079595618783088"
+                frameborder="0" scrolling="no"></iframe>
     </div>
 
 </footer>
@@ -55,9 +56,9 @@
                 </div>
                 <div class="col-lg-9" id="type-product">
                     <select class="form-control" name="typeProduct">
-                        <option>Arabica</option>
-                        <option>Robusta</option>
-                        <option>Culi</option>
+<!--                        <option>Arabica</option>-->
+<!--                        <option>Robusta</option>-->
+<!--                        <option>Culi</option>-->
                     </select>
                 </div>
             </div>
@@ -131,21 +132,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<!--<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>-->
 <script src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&amp;version=v2.5"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/news.js"></script>
 <script src="scripts/order.js"></script>
-<script src="scripts/contentDetail.js.js"></script>
+<script src="scripts/contentDetail.js"></script>
 <script>
     <?php
     if(true){
-    if($_SESSION['status_order'] == 1){
+    if(@$_SESSION['status_order'] == 1){
     ?>
     alert('Thank you for order');
     <?php
     $_SESSION['status_order'] = null;
-    }elseif ($_SESSION['status_order'] == 2){
+    }elseif (@$_SESSION['status_order'] == 2){
     ?>
     alert('Cant order');
     <?php
