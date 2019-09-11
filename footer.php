@@ -12,8 +12,9 @@
         <!--                width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
         <!--                allowTransparency="true" allow="encrypted-media"></iframe>-->
         <iframe style="border: none; overflow: hidden;"
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe&amp;tabs&amp;width=340&amp;height=154&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;colorscheme=dark&amp;show_facepile=true&amp;appId=1079595618783088"
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe08&amp;tabs&amp;width=340&amp;height=154&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;colorscheme=dark&amp;show_facepile=true&amp;appId=1079595618783088"
                 frameborder="0" scrolling="no"></iframe>
+<!--        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fukafe08%2F%3Fmodal%3Dadmin_todo_tour&tabs&width=340&height=154&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>-->
     </div>
 
 </footer>
