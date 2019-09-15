@@ -6,22 +6,7 @@ include('header.php'); ?>
     <h2>THE REAL STORY</h2>
     <div class="box row">
         <div class="block-left col-md-4"><img src="imgs/real story.png"></div>
-        <div class="block-right col-md-8">
-            <p>- Nguyên tắc giúp chúng tôi luôn đặt lên hàng đầu để đảm bảo chất lượng và hương vị tinh nguyên gửi đến
-                khách hàng.</p>
-            <p>Những hạt cà phê đều được lựa chọn khắt khe từ trái chín của mùa vụ mới nhất, được thu hái hoàn toàn bằng
-                tay, đạt tỉ lệ trái chín chiếm tới hơn 95% thu hoạch.</p>
-            <p>Công thức rang và phối trộn hạt Arabica và Robusta của U-Kafe tạo nên một tổng thể cân bằng của vị đắng,
-                ngọt, chua, giúp cà phê đậm thanh, hương thơm quyến rũ.</p>
-            <p>- Hạt ARABICA xuất xứ từ những trang trại uy tín ở Cầu Đất, thổ nhưỡng để trồng được hạt cà phê Arabica
-                ngon nhất Việt Nam. Cà phê Arabica được sơ chế ướt, chắt lọc hương trái cây chín, chua thanh dễ chịu,
-                thoang thoảng vị caramel và chocolate cùng hậu vị ngọt dịu kéo dài.</p>
-            <p>- Hạt ROBUSTA của U-Kafe được chọn lọc từ những nhà cung cấp Robusa uy tín nhất Việt Nam từ Tây Nguyên
-                (Đak Lak, Gia Lai, Lâm Đồng). Hạt Robusta được sơ chế kiểu mật ong để mật trái cà phê bám vào hạt trong
-                quá trình khô. Hạt Robusta có hàm lượng caffein cao gấp 1,5 - 2 lần hạt Arabica, được rang đậm vừa, cho
-                vị bùi béo, ngọt dịu kéo dài.</p>
-
-        </div>
+        <div class="block-right col-md-8"></div>
     </div>
 </div>
 <?php

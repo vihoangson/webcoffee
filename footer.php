@@ -135,6 +135,7 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>-->
 <script src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&amp;version=v2.5"></script>
+<script src="scripts/story.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/news.js"></script>
 <script src="scripts/order.js"></script>
