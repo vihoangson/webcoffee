@@ -97,16 +97,21 @@ function setNews(){
 
                 let listArtical = $(".list-news article").first();
                 listArtical.hide();
+
+                // foreach news
                 $.each(res,function(key,v){
+
                     let m = k.clone();
                     let ElementListArtical = listArtical.clone();
 
+                    // Set feature img
                     if(v._embedded["wp:featuredmedia"] != undefined){
-                        m.find('img').attr('src',v._embedded["wp:featuredmedia"][0].source_url);
+                        m.find('img').attr('src',v.fimg_url);
                     }else{
                         m.find('img').attr('src','https://via.placeholder.com/200x200');
                     }
 
+                    // set link
                     let link = "news-detail.php?id="+v.id ;
                     m.find('a').attr('href',link);
                     m.find('a').text(v.title.rendered);
@@ -126,10 +131,6 @@ function setNews(){
                     ElementListArtical.removeClass('hidden');
                     $(".content-news").append(m);
                     $(".list-news").append(ElementListArtical);
-
-
-                    // let index= key+1;
-                    // $(".paging-button").append('<li class="page" data-id="'+index+'">'+index+'</li>');
                 });
             }
         };
