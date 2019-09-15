@@ -2,11 +2,19 @@
 define('PAGE','HOME');
 include('header.php'); ?>
 
+<?php
+
+$json_str = file_get_contents('http://u-kafe.com/admin-post/index.php/wp-json/wp/v2/pages?_embed&slug=story');
+$story = json_decode($json_str, true);
+$img_link = $story[0]['_embedded']["wp:featuredmedia"][0]['source_url'];
+$content_story = $story[0]['content']['rendered']??'';
+
+?>
 <div class="real-story block-box container" id="real-story">
     <h2>THE REAL STORY</h2>
     <div class="box row">
-        <div class="block-left col-md-4"><img src="imgs/real story.png"></div>
-        <div class="block-right col-md-8"></div>
+        <div class="block-left col-md-4"><img src="<?= $img_link ?>"></div>
+        <div class="block-right col-md-8"><?= $content_story ?></div>
     </div>
 </div>
 <?php
