@@ -118,6 +118,7 @@ $array_product = json_decode($json_str,true);
     <button>Close</button>
     <article class="hidden">
         <h3><a href="#"></a></h3>
+        <span></span>
     </article>
 
 </div>

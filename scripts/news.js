@@ -92,8 +92,8 @@ function setNews(){
             if(true){
                 res = sessionStorage.getItem('data-news');
                 res = JSON.parse(res);
-                let k = $(".content-news article").first();
-                k.hide();
+                let selectorSlide = $(".content-news article").first();
+                selectorSlide.hide();
 
                 let listArtical = $(".list-news article").first();
                 listArtical.hide();
@@ -101,35 +101,37 @@ function setNews(){
                 // foreach news
                 $.each(res,function(key,v){
 
-                    let m = k.clone();
+                    let selectorSlideCloned = selectorSlide.clone();
                     let ElementListArtical = listArtical.clone();
 
                     // Set feature img
                     if(v._embedded["wp:featuredmedia"] != undefined){
-                        m.find('img').attr('src',v.fimg_url);
+                        selectorSlideCloned.find('img').attr('src',v.fimg_url);
                     }else{
-                        m.find('img').attr('src','https://via.placeholder.com/200x200');
+                        selectorSlideCloned.find('img').attr('src','https://via.placeholder.com/200x200');
                     }
 
                     // set link
                     let link = "news-detail.php?id="+v.id ;
-                    m.find('a').attr('href',link);
-                    m.find('a').text(v.title.rendered);
+                    selectorSlideCloned.find('a').attr('href',link);
+                    selectorSlideCloned.find('a').text(v.title.rendered);
 
-                    ElementListArtical.find('a').attr('href',link);
-                    ElementListArtical.find('a').text(v.title.rendered);
-
-                    m.find('.content-blog').html(v.excerpt.rendered);
-                    m.attr('data-id',key+1);
+                    selectorSlideCloned.find('.content-blog').html(v.excerpt.rendered);
+                    selectorSlideCloned.attr('data-id',key+1);
                     if(key != 0){
-                        m.hide();
+                        selectorSlideCloned.hide();
                     }else{
-                        m.show();
+                        selectorSlideCloned.show();
                     }
 
+                    if(true){
+                        ElementListArtical.find('a').attr('href',link);
+                        ElementListArtical.find('a').text(v.title.rendered);
+                        ElementListArtical.find('span').html(v.excerpt.rendered);
+                    }
                     ElementListArtical.show();
                     ElementListArtical.removeClass('hidden');
-                    $(".content-news").append(m);
+                    $(".content-news").append(selectorSlideCloned);
                     $(".list-news").append(ElementListArtical);
                 });
             }

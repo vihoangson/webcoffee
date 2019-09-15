@@ -13,6 +13,11 @@ $content  = ($v['content']['rendered']);
 $link_img = ($v['_embedded']["wp:featuredmedia"][0]['source_url'] ?? "");
 
 include('header.php'); ?>
+<style>
+    .list-newss a {
+        color: #582000;
+    }
+</style>
 <div class="container" id="content-detail">
     <div class="news block-box container" id="news">
         <h2>NEWS</h2>
@@ -24,17 +29,23 @@ include('header.php'); ?>
     <article class="content_detail fck_detail width_common block_ads_connect"><?=$content?></article>
 
 </div>
-<div class="container list-newss" style="">
+<div class="mt-2  container" style="">
+    <h2>Tin liên quan</h2>
+</div>
+<div class="mt-2  container list-news" style="">
     <?php
     foreach ($object as $v) {
         $id = ($v['id']);
 
         $title   = ($v['title']['rendered']);
         $content = ($v['content']['rendered']);
+        $excerpt = ($v['excerpt']['rendered']);
+
         $link_img = ($v['_embedded']["wp:featuredmedia"][0]['source_url']??"");
         ?>
         <article>
             <h3><a href="/news-detail.php?id=<?=$id?>"><?=$title?></a></h3>
+            <span><?=$excerpt?></span>
         </article>
         <?php
     }
