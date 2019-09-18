@@ -9,6 +9,8 @@ foreach ($object as $v) {
     }
 }
 $title    = ($v['title']['rendered']);
+$title_page    = $title;
+
 $content  = ($v['content']['rendered']);
 $link_img = ($v['_embedded']["wp:featuredmedia"][0]['source_url'] ?? "");
 
