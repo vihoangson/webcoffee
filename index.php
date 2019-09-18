@@ -1,6 +1,11 @@
 <?php
 define('PAGE','HOME');
-include('header.php'); ?>
+include('header.php'); 
+$json_str = file_get_contents('http://u-kafe.com/admin-post/index.php/wp-json/wp/v2/product?_embed');
+$array_product = json_decode($json_str,true);
+$json_str = file_get_contents('http://u-kafe.com/admin-post/index.php/wp-json/alexi/v1/output_css_uri');
+$array_custom_style = json_decode($json_str,true);
+?>
 
 <?php
 
@@ -17,12 +22,10 @@ $content_story = $story[0]['content']['rendered']??'';
         <div class="block-right col-md-8"><?= $content_story ?></div>
     </div>
 </div>
-<?php
 
-$json_str = file_get_contents('http://u-kafe.com/admin-post/index.php/wp-json/wp/v2/product?_embed');
-$array_product = json_decode($json_str,true);
-
-?>
+<style>
+    <?= $array_custom_style ?>
+    </style>
 <div class="coffee block-box container" id="coffee">
     <h2>COFFEE</h2>
     <div class="box row">
