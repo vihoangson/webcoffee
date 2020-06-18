@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a48e8fd-ac3f-4f3e-9ec2-ef5ea9e3602f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/less/style-500px.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
@@ -21,28 +22,40 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1PrYRBbHMVxDYPg6g0hP4DoLOIs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/less" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\vhosts\coffee\styles\less" />
+      <recent name="C:\xampp\htdocs\vhosts\coffee\scripts" />
+      <recent name="C:\xampp\htdocs\vhosts\coffee" />
+      <recent name="C:\xampp\htdocs\vhosts\coffee\styles\scss" />
+      <recent name="C:\xampp\htdocs\vhosts\coffee\admin" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -57,6 +70,27 @@
       <workItem from="1566633672918" duration="16373000" />
       <workItem from="1566717329609" duration="134000" />
       <workItem from="1566830141105" duration="2613000" />
+      <workItem from="1567605045747" duration="4242000" />
+      <workItem from="1567639808816" duration="214000" />
+      <workItem from="1567690437875" duration="598000" />
+      <workItem from="1567778743674" duration="5000" />
+      <workItem from="1567820598450" duration="2926000" />
+      <workItem from="1567825919020" duration="11263000" />
+      <workItem from="1567866364083" duration="26515000" />
+      <workItem from="1568036982378" duration="598000" />
+      <workItem from="1568121307159" duration="6681000" />
+      <workItem from="1568208492611" duration="491000" />
+      <workItem from="1568297958694" duration="1197000" />
+      <workItem from="1568377777145" duration="150000" />
+      <workItem from="1568457656259" duration="121000" />
+      <workItem from="1568520382365" duration="598000" />
+      <workItem from="1568522278486" duration="6547000" />
+      <workItem from="1568814629798" duration="1213000" />
+      <workItem from="1569044693963" duration="604000" />
+      <workItem from="1569047575486" duration="602000" />
+      <workItem from="1569055418957" duration="8045000" />
+      <workItem from="1569416142094" duration="599000" />
+      <workItem from="1592493293845" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1566830688607</created>
@@ -65,11 +99,126 @@
       <option name="project" value="LOCAL" />
       <updated>1566830688607</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="analitic and logo footer">
+      <created>1567826977881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567826977881</updated>
+    </task>
+    <task id="LOCAL-00003" summary="analitic and logo footer">
+      <created>1567827034305</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567827034305</updated>
+    </task>
+    <task id="LOCAL-00004" summary="analitic and logo footer">
+      <created>1567905257853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567905257853</updated>
+    </task>
+    <task id="LOCAL-00005" summary="analitic and logo footer">
+      <created>1567905931935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567905931935</updated>
+    </task>
+    <task id="LOCAL-00006" summary="analitic and logo footer">
+      <created>1567908582099</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567908582099</updated>
+    </task>
+    <task id="LOCAL-00007" summary="analitic and logo footer">
+      <created>1567924401875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567924401875</updated>
+    </task>
+    <task id="LOCAL-00008" summary="analitic and logo footer">
+      <created>1567932056055</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567932056055</updated>
+    </task>
+    <task id="LOCAL-00009" summary="analitic and logo footer">
+      <created>1567964945093</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567964945093</updated>
+    </task>
+    <task id="LOCAL-00010" summary="analitic and logo footer">
+      <created>1568130900837</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568130900837</updated>
+    </task>
+    <task id="LOCAL-00011" summary="analitic and logo footer">
+      <created>1568131747867</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568131747867</updated>
+    </task>
+    <task id="LOCAL-00012" summary="analitic and logo footer">
+      <created>1568208708813</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1568208708813</updated>
+    </task>
+    <task id="LOCAL-00013" summary="analitic and logo footer">
+      <created>1568522775136</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568522775136</updated>
+    </task>
+    <task id="LOCAL-00014" summary="analitic and logo footer">
+      <created>1568524098828</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1568524098828</updated>
+    </task>
+    <task id="LOCAL-00015" summary="analitic and logo footer">
+      <created>1568529832952</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1568529832952</updated>
+    </task>
+    <task id="LOCAL-00016" summary="analitic and logo footer">
+      <created>1568530801948</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1568530801948</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -86,6 +235,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="analitic and logo footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="analitic and logo footer" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="614" y="273" key="Vcs.Push.Dialog.v2" timestamp="1592493326496">
+      <screen x="124" y="0" width="1796" height="1080" />
+    </state>
+    <state x="614" y="273" key="Vcs.Push.Dialog.v2/124.0.1796.1080@124.0.1796.1080" timestamp="1592493326496" />
+    <state x="685" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1592493304772">
+      <screen x="124" y="0" width="1796" height="1080" />
+    </state>
+    <state x="685" y="235" width="672" height="678" key="search.everywhere.popup/124.0.1796.1080@124.0.1796.1080" timestamp="1592493304772" />
   </component>
 </project>

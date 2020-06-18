@@ -38,7 +38,7 @@ function is_writable_r($dir) {
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <title> <?= $title_page?$title_page.' | ':'' ?> U-Kafé | 100% Hạt cà phê </title>
+    <title> <?= isset($title_page)?$title_page.' | ':'' ?> U-Kafé | 100% Hạt cà phê </title>
     <meta name="description" content="U-Kafe Real Café – 100% hạt cà phê">
     <meta name="keywords"
           content=" cà phê hạt, hat ca phe, cà phê nguyên chất, ca phe nguyen chat, 100% cà phê nguyên chất, cà phê ngon, ca phe ngon, cà phê thơm, cà phê thơm ngon, cà phê sạch, cà phê rang xay, hạt cà phê rang xay, cà phê chất lượng cao, cà phê không hóa chất, cà phê Arabica, cà phê robusta, cà phê moka, cà phê culi, cà phê pha máy, cà phê pha máy ngon, cà phê pha máy thơm ngon, cà phê pha phin, cà phê pha phin ngon, cà phê pha phin thơm ngon, cà phê quận 1, cà phê quận 3, cà phê quận 4, cà phê quận 5, cà phê quận 7, cà phê quận 8, cà phê ngon quận 1, cà phê ngon quận 3, cà phê ngon quận 4, cà phê ngon quận 5, cà phê ngon quận 7, cà phê ngon quận 8, giao cà phê ngon quận 1, giao cà phê ngon quận 3, giao cà phê ngon quận 4, giao cà phê ngon quận 5, giao cà phê ngon quận 7, giao cà phê ngon quận 8, giao cà phê ngon, cà phê dễ uống, cà phê gia đình, cà phê thư giãn, cà phê thành công, cà phê đẳng cấp, cafe hạt, cafe nguyên chất, 100% cafe nguyên chất, cafe ngon, cafe thơm, cafe thơm ngon, cafe sạch, cafe rang xay, hạt cafe rang xay, cafe chất lượng cao, cafe không hóa chất, cafe Arabica, cafe robusta, cafe moka, cafe culi, cafe pha máy, cafe pha máy ngon, cafe pha máy thơm ngon, cafe pha phin, cafe pha phin ngon, cafe pha phin thơm ngon, cafe quận 1, cafe quận 3, cafe quận 4, cafe quận 5, cafe quận 7, cafe quận 8, cafe ngon quận 1, cafe ngon quận 3, cafe ngon quận 4, cafe ngon quận 5, cafe ngon quận 7, cafe ngon quận 8, giao cafe ngon quận 1, giao cafe ngon quận 3, giao cafe ngon quận 4, giao cafe ngon quận 5, giao cafe ngon quận 7, giao cafe ngon quận 8, giao cafe ngon, cafe dễ uống, cafe gia đình, cafe thư giãn, cafe thành công, cafe đẳng cấp, ca phe thom, ca phe thom ngon, ca phe chat luong cao, ca phe sach, hat ca phe rang xay, ca phe robusta, ca phe arabica, ca phe moka, ca phe culi, ca phe phin, ca phe pha phin, ca phe phin ngon, ca phe phin thom ngon">
@@ -54,6 +54,8 @@ function is_writable_r($dir) {
     <!--    <link href="styles/style.css" rel="stylesheet">-->
     <!--    <link href="styles/scss/style.scss" rel="stylesheet">-->
     <link rel="stylesheet/less" type="text/css" href="styles/less/style.less"/>
+
+    <link rel="stylesheet/less" media="screen and (max-width: 600px)" type="text/css" href="styles/less/style-500px.less"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
     <![endif]-->
 
@@ -69,6 +71,27 @@ function is_writable_r($dir) {
     <![endif]-->
 </head>
 <body id="page-<?= PAGE ?>">
+
+<div class="menu-small" style="display: none;">
+    <a href="/"><img src="imgs/logo.png"></a>
+    <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <i class="fa fa-reorder"></i>
+    </button>
+    <div class="hidden" id="home-scroll-small" >
+        <div>
+            <ul>
+                <li><a href="<?= PAGE=='HOME'?'':'/' ?>#home">HOME </a></li>
+                <li><a href="<?= PAGE=='HOME'?'':'/' ?>#real-story">OUT STORY </a></li>
+                <li><a href="<?= PAGE=='HOME'?'':'/' ?>#coffee">PRODUCT </a></li>
+                <li class=""><a href="<?= PAGE=='HOME'?'':'/' ?>#trust">TRUST </a></li>
+                <li><a href="<?= PAGE=='HOME'?'':'/' ?>#contact">CONTACT </a></li>
+                <li><a href="<?= PAGE=='HOME'?'':'/' ?>#news">NEWS</a></li>
+            </ul>
+            <a href="/"><img src="imgs/logo.png"></a>
+        </div>
+    </div>
+</div>
+
 <div class="header-bar menu <?= (PAGE == 'HOME'?'':'sticked') ?>" id="home-scroll">
     <div>
         <ul>

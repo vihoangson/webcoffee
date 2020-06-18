@@ -30,3 +30,8 @@ $(document).ready(function(){
 $(window).bind('scroll', function () {
     checkscroll();
 });
+
+
+$(".navbar-toggle").click(function(){
+    $("#home-scroll-small").toggleClass('hidden');
+})
